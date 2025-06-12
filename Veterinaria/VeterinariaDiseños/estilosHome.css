@@ -1,0 +1,375 @@
+html {
+  height: 100%;
+  background-image: linear-gradient(to top, #919191 0%, #000000 100%);
+}
+
+nav {
+  max-width: 910px;
+  width: 100%;
+  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacia entre logo y ul */
+  margin: 0 auto; /* Centra el nav dentro del body */
+  position: relative;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Asegura que el logo se quede a la izquierda */
+nav .logo {
+  flex: 0 0 0;
+}
+
+nav .logo img {
+  height: 100px;
+}
+
+/* Centra la lista horizontalmente y asegura espacio suficiente */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('PerritoHusky.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+  z-index: 1;
+}
+
+#texto {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/*Sección Registrar Animal*/
+.formulario {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding-bottom: 20px; /* 👈 opcional para que no quede apretado abajo */
+}
+
+
+.formulario h1 {
+  text-align: center;
+  padding: 0 0 20px;
+  border-bottom: 1px solid silver;
+}
+
+.formulario form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .nombreanimal,
+form .dueñoanimal {
+  position: relative;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin: 30px 0;
+}
+
+.nombreanimal input,
+.dueñoanimal input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.nombreanimal label,
+.dueñoanimal label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: rgb(0, 0, 0);
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.nombreanimal span::before,
+.dueñoanimal span::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 0, 64);
+  transition: .5s;
+}
+
+.nombreanimal input:focus ~ label,
+.dueñoanimal input:focus ~ label {
+  top: -5px;
+  color: rgb(255, 0, 64);
+}
+
+.nombreanimal input:focus ~ span::before,
+.dueñoanimal input:focus ~ span::before {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: rgb(202, 7, 56);
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  border-color: rgb(255, 0, 64);
+  transition: .5s;
+}
+
+/*Tabla Consulta Animal*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+th, td {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+thead {
+  background: palevioletred;
+}
+th {
+  padding: 20px 15px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  border-bottom: solid #000000;
+}
+tbody tr {
+  cursor: pointer;
+}
+tbody tr:hover {
+  background: rgb(230, 163, 185);
+}
+.btneliminanimal {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btneliminanimal:hover {
+  background-color: #c0392b;
+}
+
+.nombreanimal input:focus ~ label,
+.nombreanimal input:not(:placeholder-shown) ~ label,
+.dueñoanimal input:focus ~ label,
+.dueñoanimal input:not(:placeholder-shown) ~ label {
+  top: -5px;
+  color: rgb(255, 0, 64);
+  font-size: 12px; /* Ajusta el tamaño si es necesario */
+}
+
+/* boton volver al listado*/
+.btnvolver {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 6px 12px;
+  background-color: #f06292;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btnvolver:hover {
+  background-color: #e24687;
+}
+
+/* boton editar*/
+.btneditar {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 6px 12px;
+  background-color: #f06292;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btneditar:hover {
+  background-color: #e24687;
+}
+
+.botones-atencion {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+/* detalles animales*/
+.modal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  transition: all 508ms ease;
+}
+
+.contenedor {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+  transition: all 508ms ease;
+  position: relative;
+  border-radius: 20px;
+}
+
+.contenedor header {
+  padding: 10px;
+  background: #e24687;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-left: 1px;
+}
+
+.contenido p {
+  margin: 20px 0;
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+}
+
+/* detalles atenciones*/
+.modalatencion {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  transition: all 508ms ease;
+}
+
+.contenedoratencion {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+  transition: all 508ms ease;
+  position: relative;
+  border-radius: 20px;
+}
+
+.contenedoratencion header {
+  padding: 10px;
+  background: #e24687;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contenidoatencion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-left: 1px;
+}
+
+.contenidoatencion p {
+  margin: 20px 0;
+  font-size: 22px;
+  font-family: Arial, sans-serif;
+}

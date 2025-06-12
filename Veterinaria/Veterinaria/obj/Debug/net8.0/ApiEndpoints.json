@@ -1,0 +1,209 @@
+[
+  {
+    "ContainingType": "Veterinaria.Controllers.AnimalController",
+    "Method": "AgregarAnimal",
+    "RelativePath": "animales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevoAnimal",
+        "Type": "Veterinaria.Datos.Dtos.AnimalDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AnimalController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "animales/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AnimalController",
+    "Method": "Eliminar",
+    "RelativePath": "animales/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AnimalController",
+    "Method": "ActualizarAnimal",
+    "RelativePath": "animales/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "animalDto",
+        "Type": "Veterinaria.Datos.Dtos.AnimalDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.DuenioController",
+    "Method": "AgregarDuenio",
+    "RelativePath": "api/duenios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevoDuenio",
+        "Type": "Veterinaria.Datos.Dtos.DuenioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.DuenioController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/duenios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.DuenioController",
+    "Method": "Eliminar",
+    "RelativePath": "api/duenios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.DuenioController",
+    "Method": "ActualizarDuenio",
+    "RelativePath": "api/duenios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "duenioDto",
+        "Type": "Veterinaria.Datos.Dtos.DuenioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AtencionController",
+    "Method": "AgregarAtencion",
+    "RelativePath": "atenciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevaAtencion",
+        "Type": "Veterinaria.Datos.Dtos.AtencionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AtencionController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "atenciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AtencionController",
+    "Method": "Eliminar",
+    "RelativePath": "atenciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Veterinaria.Controllers.AtencionController",
+    "Method": "ActualizarAtencion",
+    "RelativePath": "atenciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "atencionDto",
+        "Type": "Veterinaria.Datos.Dtos.AtencionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

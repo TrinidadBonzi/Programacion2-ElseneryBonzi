@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Atención</title>
+  <link rel="stylesheet" href="estilosHome.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="Home.html"><img src="FITEO.png" alt="Logo de la veterinaria"></a>
+    </div>
+    <ul>
+      <!-- Menú vacío por ahora -->
+    </ul>
+  </nav>
+
+  <div class="formulario">
+    <h1>Editar Atención</h1>
+    <form method="post">
+
+      <div class="nombreanimal">
+        <input type="date" name="fechaAtencion" placeholder=" " required>
+        <label>Fecha de Atención:</label>
+        <span></span>
+      </div>
+
+      <div class="nombreanimal">
+        <input type="text" name="motivoAtencion" placeholder=" " required>
+        <label>Motivo:</label>
+        <span></span>
+      </div>
+
+      <div class="nombreanimal">
+        <input type="text" name="diagnostico" placeholder=" " required>
+        <label>Diagnóstico:</label>
+        <span></span>
+      </div>
+
+      <div class="nombreanimal">
+        <input type="text" name="tratamiento" placeholder=" " required>
+        <label>Tratamiento:</label>
+        <span></span>
+      </div>
+
+      <div class="nombreanimal">
+        <input type="text" name="idMascota" placeholder=" " required>
+        <label>ID Mascota:</label>
+        <span></span>
+      </div>
+
+      <div class="nombreanimal">
+        <input type="text" name="idDuenio" placeholder=" " required>
+        <label>ID Dueño:</label>
+        <span></span>
+      </div>
+
+      <input type="submit" value="Guardar">
+      <a href="atenciones.html" class="btnvolver">Volver al listado</a>
+    </form>
+  </div>
+</body>
+</html>
